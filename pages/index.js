@@ -49,6 +49,8 @@ const SKILLS = [
   {
     title: "Comfortable",
     skills: [
+      "Claude code",
+      "Github copilot",
       "React-native",
       "Expo",
       "Next js",
@@ -57,6 +59,8 @@ const SKILLS = [
       "React-query",
       "Styled-Components",
       "Vite",
+      "Rollup",
+      "Webpack federated modules",
       "MySQL",
       "Firebase",
       "Google functions / AWS Lambda",
@@ -80,6 +84,7 @@ const SKILLS = [
       "Figma",
       "Blockchain",
       "Web3",
+      "Bitcoin",
     ],
   },
 ];
@@ -129,24 +134,34 @@ const EXPERIENCE = [
       },
       {
         title: "Senior Frontend developer",
-        date: "Jun 2019 - Present",
+        date: "Jun 2019 - Nov 2023",
+      },
+    ],
+  },
+  {
+    link: "https://www.linkedin.com/company/clovernetwork/",
+    title: "Fiserv/Clover",
+    position: [
+      {
+        title: "Senior Frontend developer",
+        date: "Nov 2023 - Present",
       },
     ],
   },
 ];
 
 const PROJECTS = [
+  // {
+  //   title: "Tech-crypto Blog Website",
+  //   link: "https://cphr-blog.vercel.app",
+  //   description:
+  //     "Typescript, Next-js, Apollo, Prisma, Tailwindcss based personal blog with tech subjects, admin panel and ability to manage posts",
+  // },
   {
-    title: "Tech-crypto Blog Website",
-    link: "https://cphr-blog.vercel.app",
-    description:
-      "Typescript, Next-js, Apollo, Prisma, Tailwindcss based personal blog with tech subjects, admin panel and ability to manage posts",
-  },
-  {
-    title: "Restaurs",
+    title: "DishFlow",
+    link: "https://apps.apple.com/us/app/dishflow/id1564546421DishFlow",
     description:
       "Big react-native/firebase application for ios and android for managing restaurant, track guests activity and simplify communication between waiters,managers and guests",
-    status: "In-development",
   },
 ];
 
@@ -272,7 +287,7 @@ export default function Home() {
             <div className="flex w-full flex-row flex-wrap items-start justify-start pt-2">
               {EXPERIENCE.map((item, index) => (
                 <div
-                  className={`transitionBlockExp mt-2 w-1/2 p-2 ${opacityClassName} transition-opacity duration-500 lg:w-1/4`}
+                  className={`transitionBlockExp mt-2 w-1/2 p-2 ${opacityClassName} transition-opacity duration-500 lg:w-1/5`}
                   key={index}
                 >
                   <a
@@ -394,7 +409,7 @@ export default function Home() {
       </main>
 
       <footer className="flex h-20 flex-row items-center justify-center border-t-2 border-zinc-800 pt-2 pb-2 dark:border-zinc-100">
-        <a href="https://github.com/snownoop" target="_blank" rel="noreferrer">
+        <a href="https://github.com/cphrdev" target="_blank" rel="noreferrer">
           <FaGithub className="h-8 w-8 cursor-pointer transition duration-150 hover:text-orange-500" />
         </a>
         <a
