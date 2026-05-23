@@ -46,14 +46,14 @@ a {
 .transitionBlockExp:nth-child(4) {
   transition-delay: 3000ms;
 }
+.transitionBlockExp:nth-child(5) {
+  transition-delay: 3500ms;
+}
 
 .transitionBlockProjectTitle {
-  transition-delay: 3500ms;
+  transition-delay: 4000ms;
 }
 .transitionBlockProject:nth-child(1) {
-  transition-delay: 3500ms;
-}
-.transitionBlockProject:nth-child(2) {
   transition-delay: 4000ms;
 }
 
